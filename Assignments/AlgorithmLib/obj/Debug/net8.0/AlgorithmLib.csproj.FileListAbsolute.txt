@@ -1,0 +1,11 @@
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\bin\Debug\net8.0\AlgorithmLib.deps.json
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\bin\Debug\net8.0\AlgorithmLib.dll
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\bin\Debug\net8.0\AlgorithmLib.pdb
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.AssemblyInfoInputs.cache
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.AssemblyInfo.cs
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.csproj.CoreCompileInputs.cache
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.dll
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\refint\AlgorithmLib.dll
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\AlgorithmLib.pdb
+D:\Downloads\cse381-course\Assignments\AlgorithmLib\obj\Debug\net8.0\ref\AlgorithmLib.dll
