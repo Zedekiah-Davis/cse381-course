@@ -24,6 +24,14 @@ public static class BetterLinearSearch
     */
     public static int Search<T>(List<T> data, T target) where T : IComparable<T>
     {
-        return 0;
+        // Create incrementing loop which searches through data list
+        for (int i = 0; i < data.Count; i++){
+            // If the value of data is equal to target then return the index value
+            if (data[i].Equals(target)) {
+                return i;
+            }
+        }
+        // If target value doesn't exist in data list then return -1
+        return -1;
     }
 }
