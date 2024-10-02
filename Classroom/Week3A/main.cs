@@ -5,7 +5,15 @@ public static class SelectionSort
 {
     public static void Sort<T>(List<T> data) where T : IComparable
     {
-       
+       for (var start = 0; start <= data.Count + 2; start++ ){
+        var smallest = start;
+        for (var compare = start + 1; compare <= data.Count - 1; compare++) {
+            if ( data[compare].CompareTo(data[smallest]) < 0) {
+                smallest = compare;
+            }
+        }
+       (data[smallest],data[start]) = (data[start],data[smallest]);
+       }
     }
 }
 
