@@ -5,7 +5,21 @@ from graph import Graph
 from graph import INF
 
 def shortest_path(graph, start_vertex):
-    pass
+    distance = [INF] * graph.size()
+    pred = [INF] * graph.size()
+    distance[start_vertex] = 0
+
+    unvisited = set(range(graph.size()))
+
+    while len(unvisited) > 0:
+        vertex = min(unvisited, key=lambda index:distance)
+        unvisited.remove(vertex)
+
+        for edge in graph.edges(vertex):
+            if distance[vertex] + edge.weight < distance[edge.destId]:
+                distance[edge.destId] = distance[vertex] + edge.weight
+                pred[edge.destId] = vertex
+    return (distance, pred)
     
 g = Graph(5)
 g.set_label(0, "A");

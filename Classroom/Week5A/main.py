@@ -3,8 +3,30 @@
 
 from graph import Graph
 
-def dag_topological_sort(graph):
-    pass
+def dag_topological_sort(graph:Graph):
+    in_degree = [0] * graph.size()
+    results = []
+    for vertex in range(graph.size()):
+        for edge in graph.edges(vertex):
+            in_degree[edge.destId] += 1
+    
+    # Brother Kay Witchcraft
+    next = [vertex for vertex in range(graph.size()) if in_degree[vertex] == 0]
+
+    # next = []
+    # for vertex in range(graph.size()):
+    #     if in_degree[vertex] == 0:
+    #         next.append(vertex)
+
+    while len(next) > 0:
+        vertex = next.pop()
+        results.append(vertex)
+        for edge in graph.edges(vertex):
+            in_degree[edge.destId] -= 1
+            if in_degree[edge.destId] == 0:
+                next.append(edge.destId)
+    
+    return results
     
 g = Graph(9)
 g.set_label(0,"A")
